@@ -4,7 +4,7 @@ import userControllers from "../controllers/controllers.js"
 const router = express.Router()
 
 router.get("/", userControllers.getUsers)
-router.post("/users", userControllers.postUser)
+router.post("/", userControllers.postUser)
 router.patch("/update/:id", userControllers.patchUser)
 
 export default router
